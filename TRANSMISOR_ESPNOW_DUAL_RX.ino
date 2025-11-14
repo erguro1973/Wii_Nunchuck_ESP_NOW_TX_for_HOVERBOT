@@ -3,7 +3,7 @@
 // Placa: XIAO ESP32-C6
 // I2C: Pines "mágicos" 22/23 (físicamente D4/D5) + PULL-UPS EXTERNAS
 // Librería: "MinimalNunchuk.h" (nuestra) para evitar conflicto de calor.
-// Antena: Lógica de pines 3/14, configurada para antena INTERNA.
+// Antena: Lógica de pines 3/14, configurada para antena EXTERNA.
 // Lógica: Botón 'C' activa "Freewheel" en el Eje Trasero (RX2).
 
 #include <esp_now.h>
@@ -27,8 +27,8 @@
 
 // --- Direcciones MAC de los Receptores (Hoverboards) ---
 // ¡DEBES OBTENER ESTAS MACs DEL MONITOR SERIE DE TUS RECEPTORES!
-uint8_t receiver_mac_1[] = {0x68, 0xfe, 0x71, 0x16, 0xaa, 0x88}; // <-- MAC del receptor 1
-uint8_t receiver_mac_2[] = {0x68, 0xfe, 0x71, 0x16, 0x82, 0x38}; // <-- MAC del receptor 2
+uint8_t receiver_mac_1[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; // <-- MAC del receptor 1
+uint8_t receiver_mac_2[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; // <-- MAC del receptor 2
 
 // --- Estructura de Datos (Igual que en el RX) ---
 typedef struct {
