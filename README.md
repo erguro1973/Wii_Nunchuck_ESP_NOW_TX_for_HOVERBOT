@@ -1,4 +1,4 @@
-# 4x4 Nunchuk ESP-NOW Transmitter for Hoverboard RX
+# 4x4 Nunchuk ESP-NOW Transmitter for HOVERBOT
 ### "Lessons Learned" Version for XIAO ESP32-C6
 
 This project turns a Wii Nunchuk controller into a 4x4 low-latency controller for a custom vehicle (like a hoverboard) that uses **two separate ESP-NOW receivers** (one for the front axle, one for the rear).
@@ -74,7 +74,7 @@ Before compiling, you must:
 * **Receiver gets nothing:** Verify the MAC addresses are correct and that all devices are on the same Wi-Fi channel (Channel 1 by default).
 
 
-# Transmisor Nunchuk 4x4 con ESP-NOW para Hoverboard (XIAO ESP32-C6)
+# Transmisor Nunchuk 4x4 con ESP-NOW para HOVERBOT (XIAO ESP32-C6)
 
 Este proyecto convierte un mando Nunchuk de Wii en un controlador 4x4 de baja latencia para un vehículo personalizado (como un hoverboard) que utiliza **dos receptores ESP-NOW separados** (uno para el eje delantero y otro para el trasero).
 
